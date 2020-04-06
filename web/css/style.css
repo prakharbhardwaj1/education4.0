@@ -1,0 +1,33 @@
+.shift{
+    padding-left: 17%;
+}
+.bg{
+    background-color: rgb(241, 241, 241);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.shiftmar{
+    margin-left: 33% !important; 
+    margin-top: 2% !important;
+}
+.shiftmar2{
+    margin-left: 32.5% !important; 
+    margin-top: 2% !important;
+}
+.shiftmartext{
+    margin-left: 25% !important; 
+    margin-top: 2% !important;
+}
+.just{
+    text-align: center;
+}
+span{
+    font-size: x-large;
+}
+body{
+    margin-top: 5% !important;
+}
+.jumbotron{
+    background-color: black !important;
+    color: white;
+}

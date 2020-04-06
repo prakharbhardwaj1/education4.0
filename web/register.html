@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="margin-top: 0px !important;">
+<div class="container">
+        <div class="jumbotron">
+            <h1>Register</h1>
+            <p class="lead">If you are already registered, <a href="sign-in.html">Sign In</a></p>
+        </div>
+        <form class="col-12 col-sm-6 offset-md-3 align-items-end">
+            
+            <div class="form-group">
+                <label for="yourName">Name</label>
+                <input type="text" class="form-control" name="yourName" placeholder="Enter name">
+            </div>    
+            <div class="form-group">
+                <label for="yourMail">Email address</label>
+                <input type="email" name="yourMail" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="userClass">Class</label>
+                <input type="text" class="form-control" name="userClass" placeholder="Enter Class">
+            </div>    
+            <div class="form-group">
+                <label for="userSub">Subject</label>
+                <input type="text" class="form-control" name="userSub" placeholder="Enter Subject">
+            </div>    
+            <div class="form-group">
+                <label for="pass1">Password</label>
+                <input type="password" name="pass1" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="pass2">Confirm Password</label>
+                <input type="password" name="pass2" class="form-control" placeholder="Confirm Password">
+            </div>
+            <div class="form-group form-check float-center">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="exampleCheck1">I have read all the <a href="terms.html">Terms & Conditions</a></label>
+            </div><br>
+            <button type="submit" name="register" id="register" class="offset-md-5 btn btn-primary">Register</button>
+        </form>
+</div>
+
+</body>
+</html>
