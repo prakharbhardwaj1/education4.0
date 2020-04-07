@@ -49,6 +49,9 @@ def newuser():
         if password != conf_password:
             return "Passwords do not match"
     return redirect(url_for('signin'))
-    
+
+@app.route("/terms")
+def terms():
+    return "Bhai ne bola Accept karna hai toh karna hai"
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=8000,debug=True)
