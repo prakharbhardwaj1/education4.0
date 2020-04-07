@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Login</h1>
+            <p class="lead">If you are not registered, <a href="{{url_for('register')}}">Register Here</a></p>
+        </div>
+        <form class="col-12 col-sm-6 offset-md-3 align-items-end" action="{{url_for('login')}}" method='post'>
+				<div class="form-group">
+					<label for="userMail">Email</label>
+					<input type="email" class="form-control" name="userMail" placeholder="Enter Email ID">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" name="password" placeholder="Password">
+					
+					<a href=""><small id="emailHelp" class="form-text text-muted">Forgot Password ?</small></a>
+				</div>
+				<div class="form-group form-check float-center">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+				</div><br>
+				<button type="submit" class="offset-md-5 btn btn-primary">Login</button>
+		</form>
+    </div>
+</body>
+</html>

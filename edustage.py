@@ -19,7 +19,7 @@ from sklearn.model_selection import cross_val_score
 # In[3]:
 
 
-data =pd.read_csv(r'C:\Users\Prakhar\Desktop\trainedustage.csv')
+data =pd.read_csv(r'trainedustage.csv')
 array = data.values
 
 for i in range(len(array)):
@@ -46,7 +46,7 @@ for i in range(len(train_y)):
 mul_lr = linear_model.LogisticRegression(multi_class='multinomial', solver='newton-cg',max_iter =1000)
 mul_lr.fit(mainarray, train_y)
 
-testdata =pd.read_csv(r'C:\Users\Prakhar\Desktop\testedustage.csv')    
+testdata =pd.read_csv(r'testedustage.csv')    
 test = testdata.values
 
 for i in range(len(test)):
