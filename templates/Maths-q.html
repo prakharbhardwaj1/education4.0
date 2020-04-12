@@ -21,56 +21,53 @@
         </div>
 
 <div class="progress">
-  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: {{width}}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <br><br>
         <div class="row justify-content-center shift">
-            <div class="col-12 col-sm-4">
-                <a href="Maths-q14.html">Question 14</a>
+            <div class="col-12 col-sm-4 offset-md-4">
+                Question {{this_ques}}
             </div>
             <div class="col-12 col-sm-4">
-                Question 15
-            </div>
-            <div class="col-12 col-sm-4">
-                <a href="Maths-q16.html">Question 16</a>
+                <a href="Maths-q2.html">Question {{next_ques}}</a>
             </div>
         </div>
         <br><br>
         <div class="container col-12 offset-sm-2 col-sm-8 bg">
             <h2 class="lead just">
-                <span class="q">Q15.</span> Dividend is exactly divisible by divisor if_______ is 0.
+                <span class="q">Q{{this_ques}}.</span> {{question}}
             </h2>
             <br>
                 <div class="row col-12">
-            <div class="form-check float-left  shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <div class="form-check float-left  shiftmar" action="{{url_for('quesAns')}}" method="post">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
-                  Quoteint
+                  {{option_one}}
                 </label>
               </div>
-              <div class="form-check float-right  shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <div class="form-check float-right  shiftmar">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2">
                 <label class="form-check-label" for="defaultCheck2">
-                  Divisor
+                  {{option_two}}
                 </label>
               </div>
                 </div>
                 <div class="row col-12">
-              <div class="form-check float-left shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <div class="form-check float-left shiftmar">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
-                  Remainder
+                  {{option_three}}
                 </label>
               </div>
-              <div class="form-check float-right shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+              <div class="form-check float-right shiftmar">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4">
                 <label class="form-check-label" for="defaultCheck4">
-                  Number Itself
+                  {{option_four}}
                 </label>
               </div>
               </div>
               <br><br>
-              <button type="button" class="btn btn-warning offset-sm-5">Submit</button>
+              <button type="submit" class="btn btn-warning offset-sm-5">Submit</button>
         </div>
     </div>
 </body>

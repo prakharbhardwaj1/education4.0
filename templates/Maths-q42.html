@@ -9,7 +9,7 @@
     <meta name="author" content="">
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Maths Quiz</h1>
-            <a href="sign-in.html" class="float-right">Sign Out</a>
+            <a href="{{url_for('signin')}}" class="float-right">Sign Out</a>
         </div>
 
 <div class="progress">

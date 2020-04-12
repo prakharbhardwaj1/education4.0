@@ -9,7 +9,7 @@
     <meta name="author" content="">
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Maths Quiz</h1>
-            <a href="sign-in.html" class="float-right">Sign Out</a>
+            <a href="{{url_for('signin')}}" class="float-right">Sign Out</a>
         </div>
 
 <div class="progress">
@@ -26,13 +26,13 @@
 <br><br>
         <div class="row justify-content-center shift">
             <div class="col-12 col-sm-4">
-                <a href="Maths-q1.html">Question 1</a>
+                <a href="{{url_for('question1')}}">Question 1</a>
             </div>
             <div class="col-12 col-sm-4">
                 Question 2
             </div>
             <div class="col-12 col-sm-4">
-                <a href="Maths-q3.html">Question 3</a>
+                <a href="{{url_for('question3')}}">Question 3</a>
             </div>
         </div>
         <br><br>
@@ -42,15 +42,16 @@
                 digit number?
             </h2>
             <br>
+			<form action="{{url_for('quesAns2')}}" method="post">
                 <div class="row col-12">
             <div class="form-check float-left  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="0" id="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                   0
                 </label>
               </div>
               <div class="form-check float-right  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <input class="form-check-input" type="checkbox" value="1" id="defaultCheck2" name="defaultCheck2">
                 <label class="form-check-label" for="defaultCheck2">
                   1
                 </label>
@@ -58,20 +59,21 @@
                 </div>
                 <div class="row col-12">
               <div class="form-check float-left shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <input class="form-check-input" type="checkbox" value="2" id="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
                   2
                 </label>
               </div>
               <div class="form-check float-right shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <input class="form-check-input" type="checkbox" value="3" id="defaultCheck4" name="defaultCheck4">
                 <label class="form-check-label" for="defaultCheck4">
                   3
                 </label>
               </div>
               </div>
               <br><br>
-              <button type="button" class="btn btn-warning offset-sm-5">Submit</button>
+              <button type="submit" class="btn btn-warning offset-sm-5">Submit</button>
+			</form>
         </div>
     </div>
 </body>
