@@ -41,16 +41,17 @@
                 <span class="q">Q36</span> By how many times does the area of a square increase if length of the square is
                 doubled?
             </h2>
-            <br>
+               <br>
+                <form action="{{url_for('quesAns10')}}" method="post">
                 <div class="row col-12">
             <div class="form-check float-left  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                     4
                 </label>
               </div>
               <div class="form-check float-right  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2">
                 <label class="form-check-label" for="defaultCheck2">
                     8
                 </label>
@@ -58,13 +59,13 @@
             </div>
                 <div class="row col-12">
               <div class="form-check float-left shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
                   3
                 </label>
               </div>
               <div class="form-check float-right shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4">
                 <label class="form-check-label" for="defaultCheck4">
                   2
                 </label>
@@ -72,7 +73,7 @@
               </div>
               <br><br>
               <button type="button" class="btn btn-warning offset-sm-5">Submit</button>
-        </div>
+        </form>
     </div>
 </body>
 </html>

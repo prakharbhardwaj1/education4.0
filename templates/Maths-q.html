@@ -37,16 +37,18 @@
             <h2 class="lead just">
                 <span class="q">Q{{this_ques}}.</span> {{question}}
             </h2>
-            <br>
+               <br>
+                <form action="{{url_for('quesAns10')}}" method="post">
+            <form action="{{url_for('quesAns10')}}" method="post">
                 <div class="row col-12">
             <div class="form-check float-left  shiftmar" action="{{url_for('quesAns')}}" method="post">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                   {{option_one}}
                 </label>
               </div>
               <div class="form-check float-right  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2" name="defaultCheck2">
                 <label class="form-check-label" for="defaultCheck2">
                   {{option_two}}
                 </label>
@@ -54,13 +56,13 @@
                 </div>
                 <div class="row col-12">
               <div class="form-check float-left shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
                   {{option_three}}
                 </label>
               </div>
               <div class="form-check float-right shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4" name="defaultCheck4">
                 <label class="form-check-label" for="defaultCheck4">
                   {{option_four}}
                 </label>
@@ -68,6 +70,7 @@
               </div>
               <br><br>
               <button type="submit" class="btn btn-warning offset-sm-5">Submit</button>
+            </form>
         </div>
     </div>
 </body>

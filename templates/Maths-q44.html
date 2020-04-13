@@ -40,10 +40,11 @@
             <h2 class="lead just">
                 <span class="q">Q44</span> Figures with same area may have different perimeter?
             </h2>
-            <br>
+               <br>
+                <form action="{{url_for('quesAns10')}}" method="post">
                 <div class="row col-12">
             <div class="form-check float-left  shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                     Yes
                 </label>
@@ -51,7 +52,7 @@
             </div>
                 <div class="row col-12">
               <div class="form-check float-left shiftmar">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
                   No
                 </label>
@@ -59,7 +60,7 @@
               </div>
               <br><br>
               <button type="button" class="btn btn-warning offset-sm-5">Submit</button>
-        </div>
+        </form>
     </div>
 </body>
 </html>

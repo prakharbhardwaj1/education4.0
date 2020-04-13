@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,16 +41,17 @@
                 <span class="q">Q47</span> What type of an angle is formed between the hands of the clock when it is 10:10 by
                 the clock?
             </h2>
-            <br>
+               <br>
+                <form action="{{url_for('quesAns10')}}" method="post">
                 <div class="row col-12">
             <div class="form-check float-left  shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                     Acute
                 </label>
               </div>
               <div class="form-check float-right  shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2">
                 <label class="form-check-label" for="defaultCheck2">
                     Right
                 </label>
@@ -58,13 +59,13 @@
             </div>
                 <div class="row col-12">
               <div class="form-check float-left shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
                 <label class="form-check-label" for="defaultCheck3">
                   Obtuse
                 </label>
               </div>
               <div class="form-check float-right shiftmartext">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4">
                 <label class="form-check-label" for="defaultCheck4">
                 180°
                 </label>
@@ -72,7 +73,7 @@
               </div>
               <br><br>
               <button type="button" class="btn btn-warning offset-sm-5">Submit</button>
-        </div>
+        </form>
     </div>
 </body>
 </html>
